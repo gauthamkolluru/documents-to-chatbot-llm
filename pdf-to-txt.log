@@ -1,1 +1,4 @@
 ERROR:__main__:file extension of the out file isn't 'txt'
+2024-03-30 10:59:44,790:ERROR-file extension of the out file is not 'txt'
+2024-03-30 11:00:32,976:ERROR:36:file extension of the out file is not 'txt'
+2024-03-30 11:01:42,371:ERROR:36:writeToTxt:file extension of the out file is not 'txt'

@@ -1,8 +1,13 @@
+from datetime import datetime
+import sys
 import PyPDF2
 import logging
 
+
 logging.basicConfig(filename='pdf-to-txt.log',
-                    encoding='utf-8', level=logging.DEBUG)
+                    encoding='utf-8',
+                    level=logging.DEBUG,
+                    format="%(asctime)s:%(levelname)s:%(lineno)s:%(funcName)s:%(message)s")
 logger = logging.getLogger(__name__)
 
 
@@ -26,7 +31,7 @@ class PdfToTxt:
             with open(self.tfp, 'w') as self.__fp:
                 self.__fp.writelines(self.__text)
         else:
-            logger.error("file extension of the out file isn't 'txt'")
+            logger.error("file extension of the out file is not 'txt'")
 
 
 if __name__ == '__main__':
